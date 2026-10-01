@@ -1,0 +1,10 @@
+# Runtime dependencies, lower bounds only; the source of truth is pyproject.toml.
+# Exact versions used for the committed results: requirements-lock.txt
+tensorflow>=2.16,<2.22
+numpy>=1.24,<3.0
+pandas>=2.0
+scikit-learn>=1.4
+scipy>=1.10
+pyarrow>=14
+PyYAML>=6.0
+matplotlib>=3.7

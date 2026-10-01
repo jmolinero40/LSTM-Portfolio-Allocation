@@ -1,0 +1,6 @@
+side,a,b,cost_bps,diff,ci_low,ci_high,p_value
+long_only,lstm_lstm,equal_weight,0,0.1115224275,-0.2255082779,0.409930969,0.5376
+long_only,lstm_lstm,equal_weight,5,-0.2725715494,-0.6282690037,0.04334121578,0.094
+long_only,lstm_lstm,ema_ewma,0,-0.01467346387,-0.5017342277,0.4215955868,0.9856
+long_short,lstm_lstm,ema_ewma,0,0.3988717409,-0.3523550156,1.175656335,0.3012
+long_only,ema_ewma,equal_weight,0,0.1261958913,-0.4338124684,0.7085575211,0.7496

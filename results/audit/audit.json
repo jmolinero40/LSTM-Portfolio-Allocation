@@ -1,0 +1,363 @@
+{
+  "saved_backtests": {
+    "known_leveraged": {
+      "params": {
+        "mercado_conocido": "SI",
+        "n_features": 11,
+        "ret_lookback": 60,
+        "risk_lookback": 240,
+        "horizon": 1,
+        "target_annual_vol": 0.15,
+        "short_allowed": true,
+        "leverage_allowed": true,
+        "k": 5,
+        "rf": 0,
+        "rl": 0
+      },
+      "first_day": "2014-01-03",
+      "last_day": "2025-11-14",
+      "whole": {
+        "days": 2894,
+        "sharpe": 1.0975187989420951,
+        "cagr": 0.24930005548702838,
+        "max_dd": -0.3266262871110779
+      },
+      "train_period": {
+        "days": 1963,
+        "sharpe": 1.4327181045753126,
+        "cagr": 0.3387368269858746,
+        "max_dd": -0.2757812100554754
+      },
+      "validation_period": {
+        "days": 459,
+        "sharpe": 0.166277089238323,
+        "cagr": 0.009202096756915079,
+        "max_dd": -0.31419115123378183
+      },
+      "test_period": {
+        "days": 472,
+        "sharpe": 0.7844057647349405,
+        "cagr": 0.15323346177556707,
+        "max_dd": -0.16042108933248078
+      },
+      "share_of_days_before_test": 0.8369039391845197
+    },
+    "known_leveraged_cost": {
+      "params": {
+        "mercado_conocido": "SI",
+        "n_features": 11,
+        "ret_lookback": 60,
+        "risk_lookback": 240,
+        "horizon": 1,
+        "target_annual_vol": 0.15,
+        "short_allowed": true,
+        "leverage_allowed": true,
+        "k": 5,
+        "rf": 0.001666666666666667,
+        "rl": 0.001666666666666667
+      },
+      "first_day": "2014-01-03",
+      "last_day": "2025-11-12",
+      "whole": {
+        "days": 2893,
+        "sharpe": 0.7158745523061567,
+        "cagr": 0.09922018044605574,
+        "max_dd": -0.23033834950997267
+      },
+      "train_period": {
+        "days": 1963,
+        "sharpe": 1.031711213562562,
+        "cagr": 0.14942702939648744,
+        "max_dd": -0.19945612431880078
+      },
+      "validation_period": {
+        "days": 459,
+        "sharpe": 0.11277755532338798,
+        "cagr": 0.004956194719640372,
+        "max_dd": -0.22716057353574803
+      },
+      "test_period": {
+        "days": 471,
+        "sharpe": 0.0375178170894754,
+        "cagr": -0.00415903490545233,
+        "max_dd": -0.13183213094775226
+      },
+      "share_of_days_before_test": 0.8371932250259246
+    },
+    "known_long_only": {
+      "params": {
+        "mercado_conocido": "SI",
+        "n_features": 11,
+        "ret_lookback": 60,
+        "risk_lookback": 240,
+        "horizon": 1,
+        "target_annual_vol": 0.15,
+        "short_allowed": false,
+        "leverage_allowed": false,
+        "k": 5,
+        "rf": 0,
+        "rl": 0
+      },
+      "first_day": "2014-01-03",
+      "last_day": "2025-11-14",
+      "whole": {
+        "days": 2895,
+        "sharpe": 1.0254805045392474,
+        "cagr": 0.14311316240053706,
+        "max_dd": -0.2366010728310085
+      },
+      "train_period": {
+        "days": 1963,
+        "sharpe": 1.1209650343586393,
+        "cagr": 0.15703769976662718,
+        "max_dd": -0.2366010728310085
+      },
+      "validation_period": {
+        "days": 459,
+        "sharpe": 0.4353563497472721,
+        "cagr": 0.059782043220161896,
+        "max_dd": -0.17131156719289897
+      },
+      "test_period": {
+        "days": 473,
+        "sharpe": 1.387447460905892,
+        "cagr": 0.16994779464642495,
+        "max_dd": -0.11288227202053458
+      },
+      "share_of_days_before_test": 0.836614853195164
+    },
+    "known_long_short": {
+      "params": {
+        "mercado_conocido": "SI",
+        "n_features": 11,
+        "ret_lookback": 60,
+        "risk_lookback": 240,
+        "horizon": 1,
+        "target_annual_vol": 0.15,
+        "short_allowed": true,
+        "leverage_allowed": false,
+        "k": 5,
+        "rf": 0,
+        "rl": 0
+      },
+      "first_day": "2014-01-03",
+      "last_day": "2025-11-14",
+      "whole": {
+        "days": 2895,
+        "sharpe": 1.157072423359867,
+        "cagr": 0.1484740768767061,
+        "max_dd": -0.168498904292683
+      },
+      "train_period": {
+        "days": 1963,
+        "sharpe": 1.438980407356227,
+        "cagr": 0.18622804075111676,
+        "max_dd": -0.16199135314015234
+      },
+      "validation_period": {
+        "days": 459,
+        "sharpe": 0.4272511122996671,
+        "cagr": 0.05499989452184617,
+        "max_dd": -0.15624525973391135
+      },
+      "test_period": {
+        "days": 473,
+        "sharpe": 0.8552613839558347,
+        "cagr": 0.09044115548569298,
+        "max_dd": -0.08453384234079364
+      },
+      "share_of_days_before_test": 0.836614853195164
+    },
+    "known_long_short_jan2026": {
+      "params": {
+        "mercado_conocido": "SI",
+        "n_features": 11,
+        "ret_lookback": 60,
+        "risk_lookback": 240,
+        "horizon": 1,
+        "target_annual_vol": 0.15,
+        "short_allowed": true,
+        "leverage_allowed": false,
+        "k": 5,
+        "rf": 0,
+        "rl": 0
+      },
+      "first_day": "2014-01-03",
+      "last_day": "2025-10-24",
+      "whole": {
+        "days": 2880,
+        "sharpe": 0.7593610164855762,
+        "cagr": 0.09154928707785848,
+        "max_dd": -0.25780759972494083
+      },
+      "train_period": {
+        "days": 1963,
+        "sharpe": 0.9961893380597059,
+        "cagr": 0.12367891464520264,
+        "max_dd": -0.25780759972494083
+      },
+      "validation_period": {
+        "days": 459,
+        "sharpe": 0.032047514447822834,
+        "cagr": -0.005882881661856687,
+        "max_dd": -0.18984276258676802
+      },
+      "test_period": {
+        "days": 458,
+        "sharpe": 0.5858551540361986,
+        "cagr": 0.05861653257536448,
+        "max_dd": -0.07897532185435285
+      },
+      "share_of_days_before_test": 0.8409722222222222
+    },
+    "unknown_long_only": {
+      "params": {
+        "mercado_conocido": "NO",
+        "n_features": 11,
+        "ret_lookback": 60,
+        "risk_lookback": 240,
+        "horizon": 1,
+        "target_annual_vol": 0.15,
+        "short_allowed": false,
+        "leverage_allowed": false,
+        "k": 5,
+        "rf": 0,
+        "rl": 0
+      },
+      "first_day": "2013-12-20",
+      "last_day": "2025-11-13",
+      "whole": {
+        "days": 2928,
+        "sharpe": 0.914594926521484,
+        "cagr": 0.13067821424914672,
+        "max_dd": -0.23393950321050683
+      },
+      "train_period": {
+        "days": 1991,
+        "sharpe": 0.8437244836211987,
+        "cagr": 0.12336600654397833,
+        "max_dd": -0.23393950321050683
+      },
+      "validation_period": {
+        "days": 458,
+        "sharpe": 0.5983199754804468,
+        "cagr": 0.07864930463886277,
+        "max_dd": -0.12004072621582162
+      },
+      "test_period": {
+        "days": 479,
+        "sharpe": 1.6470139296631578,
+        "cagr": 0.21510279432008672,
+        "max_dd": -0.10482644069478253
+      },
+      "share_of_days_before_test": 0.8364071038251366
+    },
+    "unknown_long_short": {
+      "params": {
+        "mercado_conocido": "NO",
+        "n_features": 11,
+        "ret_lookback": 60,
+        "risk_lookback": 240,
+        "horizon": 1,
+        "target_annual_vol": 0.15,
+        "short_allowed": true,
+        "leverage_allowed": false,
+        "k": 5,
+        "rf": 0,
+        "rl": 0
+      },
+      "first_day": "2013-12-20",
+      "last_day": "2025-11-13",
+      "whole": {
+        "days": 2928,
+        "sharpe": 0.34514150597253296,
+        "cagr": 0.041200960918763574,
+        "max_dd": -0.2505595169975178
+      },
+      "train_period": {
+        "days": 1991,
+        "sharpe": 0.36836601901469657,
+        "cagr": 0.04544423818015031,
+        "max_dd": -0.2505595169975178
+      },
+      "validation_period": {
+        "days": 458,
+        "sharpe": 0.41400728322604746,
+        "cagr": 0.053647950714017956,
+        "max_dd": -0.09691127084557627
+      },
+      "test_period": {
+        "days": 479,
+        "sharpe": 0.1577920956184206,
+        "cagr": 0.012180676828068338,
+        "max_dd": -0.20237126111384418
+      },
+      "share_of_days_before_test": 0.8364071038251366
+    }
+  },
+  "volatility_rounding": {
+    "days": 2895,
+    "distinct_values": 7,
+    "annualised_levels_pct": [
+      3.2,
+      4.8,
+      6.3,
+      7.9,
+      9.5,
+      11.1,
+      12.7
+    ]
+  },
+  "christoffersen": {
+    "exceptions": 173,
+    "T": 2895,
+    "lr_ind_thesis_formula": 41.16220801438021,
+    "p_thesis_formula": 1.4010544205352622e-10,
+    "lr_ind_textbook": 19.834709745148757,
+    "p_textbook": 8.44354256947294e-06
+  },
+  "leverage_rate": {
+    "rate_per_day": 0.0016666666666666668,
+    "implied_annual_rate": 0.5214295532117872
+  },
+  "ema_leak_on_noise": {
+    "alpha": 0.09523809523809523,
+    "linear_model_plus_ema_t": 0.7962926444488266,
+    "zero_forecast_plus_ema_t": 0.6235456517452179,
+    "linear_model_plus_ema_t_minus_1": 0.5006901991717609
+  },
+  "return_network": {
+    "rentabilidades_dim_11": {
+      "test_first_day": "2024-02-08",
+      "test_last_day": "2026-01-20",
+      "hit_with_ema_t_as_trained": 0.6985236985236986,
+      "hit_with_ema_t_minus_1": 0.5182595182595182,
+      "hit_ema_t_minus_1_alone": 0.5038850038850039,
+      "hit_always_up": 0.5503108003108003
+    },
+    "rentabilidades": {
+      "test_first_day": "2023-11-30",
+      "test_last_day": "2025-10-24",
+      "hit_with_ema_t_as_trained": 0.696969696969697,
+      "hit_with_ema_t_minus_1": 0.521489403842345,
+      "hit_ema_t_minus_1_alone": 0.5111903347197465,
+      "hit_always_up": 0.5517924341453754
+    }
+  },
+  "risk_network": {
+    "qlike_test_scaled_inputs": -7.827134609222412,
+    "qlike_test_raw_inputs": -7.580528736114502,
+    "sigma_time_cv_scaled": 0.3361254632472992,
+    "sigma_time_cv_raw": 0.0013346937485039234,
+    "corr_sigma_abs_return_scaled": 0.3919129757798649,
+    "corr_sigma_abs_return_raw": 0.2235537237193235
+  },
+  "replication_jan2026": {
+    "days_compared": 2880,
+    "correlation_with_saved": 0.9999999999966405,
+    "max_abs_difference": 7.667211462426826e-08,
+    "sharpe_reproduced": 0.759362222266682,
+    "sharpe_saved": 0.7593610164855762,
+    "sigma_time_cv_in_backtest": 0.0013346937485039234
+  }
+}

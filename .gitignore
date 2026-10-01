@@ -1,0 +1,44 @@
+# ---------------------------------------------------------------------------
+# Run artefacts. Per-fold checkpoints are ~0.4 MB each and 54 of them change
+# on every retrain: not for git. What IS tracked under results/ is small and is
+# exactly what the README numbers are computed from.
+# ---------------------------------------------------------------------------
+runs/
+data/raw/
+
+# Python
+__pycache__/
+*.py[cod]
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Environments
+.env
+.venv/
+venv/
+env/
+.conda/
+
+# Testing, linting
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+.mypy_cache/
+.ruff_cache/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Editors and OS
+.idea/
+.vscode/
+*.swp
+.spyproject/
+.spyderproject/
+.DS_Store
+Thumbs.db
+desktop.ini

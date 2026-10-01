@@ -1,0 +1,81 @@
+name: walkforward
+data:
+  snapshot: data/snapshot/prices_adjclose.csv
+  sha256: b0f19806b2f4ffe0efc5a8140dc5ea4a2985d11af3aab6dc9edb62708778f333
+  start: '2013-01-01'
+  end: '2025-12-31'
+features:
+  winsor_lower: 0.005
+  winsor_upper: 0.995
+  ema_span: 20
+walkforward:
+  test_years:
+  - 2017
+  - 2018
+  - 2019
+  - 2020
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+  val_fraction: 0.15
+  seeds:
+  - 0
+  - 1
+  - 2
+return_model:
+  lookback: 60
+  units:
+  - 64
+  - 32
+  dropout: 0.2
+  l2: 1.0e-05
+  learning_rate: 0.001
+  batch_size: 32
+  epochs: 200
+  early_stopping_patience: 15
+  reduce_lr_patience: 7
+  reduce_lr_factor: 0.5
+  min_lr: 1.0e-05
+  shuffle: false
+  huber_delta: 1.0
+  init_output_bias: false
+risk_model:
+  lookback: 240
+  units:
+  - 64
+  - 32
+  dropout: 0.2
+  l2: 1.0e-05
+  learning_rate: 0.001
+  batch_size: 32
+  epochs: 200
+  early_stopping_patience: 15
+  reduce_lr_patience: 7
+  reduce_lr_factor: 0.5
+  min_lr: 1.0e-05
+  shuffle: false
+  huber_delta: 1.0
+  init_output_bias: true
+portfolio:
+  k: 5
+  tau: 6.0
+  w_max: 0.3
+  target_annual_vol: 0.15
+  corr_window: 60
+  corr_lambda: 0.97
+  corr_shrinkage: 0.3
+  ewma_sigma_lambda: 0.97
+evaluation:
+  cost_bps:
+  - 0.0
+  - 5.0
+  - 10.0
+  var_alpha: 0.01
+  bootstrap_block: 20
+  bootstrap_samples: 5000
+  bootstrap_seed: 0
+output:
+  runs_dir: runs/walkforward
+  results_dir: results/walkforward

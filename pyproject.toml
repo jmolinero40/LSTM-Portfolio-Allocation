@@ -1,0 +1,67 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lstm-portfolio"
+version = "1.0.0"
+description = "Return and volatility LSTMs combined by a Sharpe-inspired meta-model, evaluated walk-forward"
+readme = "README.md"
+requires-python = ">=3.10,<3.14"
+license = { file = "LICENSE" }
+authors = [{ name = "Javier Molinero Araguas", email = "jmolinero40@gmail.com" }]
+keywords = ["portfolio-allocation", "lstm", "volatility-forecasting", "backtesting", "walk-forward", "finance"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Office/Business :: Financial :: Investment",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "tensorflow>=2.16,<2.22",
+    "numpy>=1.24,<3.0",
+    "pandas>=2.0",
+    "scikit-learn>=1.4",
+    "scipy>=1.10",
+    "pyarrow>=14",
+    "PyYAML>=6.0",
+    "matplotlib>=3.7",
+]
+
+[project.optional-dependencies]
+data = ["yfinance>=0.2.40"]
+audit = ["openpyxl>=3.1"]
+dev = ["pytest>=7.4", "pytest-cov>=4.1", "ruff>=0.4", "openpyxl>=3.1"]
+
+[project.urls]
+Repository = "https://github.com/jmolinero40/LSTM-Portfolio-Allocation"
+
+[project.scripts]
+lstm-download = "lstm_portfolio.download:main"
+lstm-walkforward = "lstm_portfolio.walkforward:main"
+lstm-report = "lstm_portfolio.report:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v --strict-markers"
+markers = [
+    "slow: tests that take more than a few seconds",
+    "tf: tests that build or load TensorFlow models",
+]
+filterwarnings = ["ignore::DeprecationWarning", "ignore:Trying to unpickle:UserWarning"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py310"
+src = ["src", "tests", "scripts"]
+extend-exclude = ["legacy"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B", "C4", "SIM"]
+ignore = ["E501", "E731"]
+
+[tool.ruff.format]
+quote-style = "double"

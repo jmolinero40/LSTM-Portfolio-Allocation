@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+title: "Dual-LSTM Portfolio Allocation: a walk-forward re-evaluation"
+message: If you use this software, please cite it as below.
+type: software
+authors:
+  - family-names: Molinero Araguas
+    given-names: Javier
+    email: jmolinero40@gmail.com
+repository-code: "https://github.com/jmolinero40/LSTM-Portfolio-Allocation"
+license: MIT
+version: 1.0.0
+date-released: "2026-10-01"
+keywords:
+  - portfolio allocation
+  - LSTM
+  - volatility forecasting
+  - backtesting
+  - walk-forward evaluation
+  - look-ahead bias

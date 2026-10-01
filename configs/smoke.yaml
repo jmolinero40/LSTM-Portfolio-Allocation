@@ -1,0 +1,14 @@
+# A two-minute end-to-end run on the real snapshot with tiny training budgets.
+# It checks that the pipeline runs on your machine; its numbers mean nothing.
+name: smoke
+data:
+  snapshot: data/snapshot/prices_adjclose.csv
+  sha256: null
+walkforward:
+  test_years: [2024, 2025]
+  seeds: [0]
+return_model: {lookback: 60, epochs: 2}
+risk_model: {lookback: 240, epochs: 2}
+output:
+  runs_dir: runs/smoke
+  results_dir: runs/smoke/results
