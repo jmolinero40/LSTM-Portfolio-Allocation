@@ -1,0 +1,25 @@
+=== RESUMEN DE PERFORMANCE ===
+              CAGR: 0.13034276763216335
+           Vol_ann: 0.14595990090049205
+            Sharpe: 0.914594926521484
+             MaxDD: -0.23393950321050705
+        Gross_mean: 0.6713878073770492
+          Net_mean: 0.6713878073770492
+
+=== BACKTEST VaR ===
+             alpha: 0.01
+        Violations: 2432.0
+                 T: 2928.0
+          Uncond_p: 0.8306010928961749
+             LR_uc: 19745.43696701894
+           p_LR_uc: 0.0
+     Duration_mean: 1.2040312628547922
+      Duration_exp: 100.0
+       Duration_KS: 0.9583697527766352
+     p_Duration_KS: 0.0
+       N_durations: 2431.0
+     ES_model_mean: 0.009832801229898767
+       ES_realized: 0.0021137787482376495
+          AS_meanZ: -0.32884573946736984
+              AS_z: -38.717355161395496
+              p_AS: 0.0

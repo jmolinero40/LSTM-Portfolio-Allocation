@@ -1,0 +1,34 @@
+=== RESUMEN DE PERFORMANCE ===
+              CAGR: 0.14360019501833032
+           Vol_ann: 0.14005138150659285
+            Sharpe: 1.0254805045392477
+             MaxDD: -0.23660107283100873
+            Calmar: 0.6069296022207648
+         Hit_ratio: 0.555440414507772
+          Turnover: 0.40045601243953005
+        Gross_mean: 0.9043694991364422
+          Net_mean: 0.9043694991364422
+        Beta_SP500: 0.649943668347143
+       Beta_IBEX35: 0.4084865889680443
+
+=== BACKTEST VaR ===
+             alpha: 0.01
+        Violations: 173
+                 T: 2895
+          Uncond_p: 0.059758203799654575
+             LR_uc: 337.8161116964127
+           p_LR_uc: 0.0
+            LR_ind: 41.16220801438021
+          p_LR_ind: 1.4010548277099133e-10
+     Duration_mean: 16.598837209302324
+      Duration_exp: 100.0
+       Duration_KS: 0.5769096757138616
+     p_Duration_KS: 8.561044933928342e-55
+       N_durations: 172.0
+    Viol_last_250d: 10.0
+ Traffic_last_250d: red
+     ES_model_mean: 0.014892056505795078
+       ES_realized: 0.020256528451342494
+          AS_meanZ: 0.19328963320627265
+              AS_z: 2.180814910130884
+              p_AS: 0.029197109300462376
