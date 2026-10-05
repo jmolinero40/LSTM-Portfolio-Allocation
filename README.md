@@ -6,7 +6,7 @@ a Sharpe-inspired meta-model turns the two forecasts into portfolio weights
 with a temperature softmax, a position cap and a volatility target.
 Bachelor's thesis in Economics (double degree in Economics and Mathematics &
 Statistics, Complutense University of Madrid, 2026), graded with *Matrícula de
-Honor (Honors/Higest distinction)*.
+Honor (Honors/Highest distinction)*.
 
 This repository is a **re-evaluation** of that thesis, not just its code.
 Preparing it for publication, I audited the original backtest and found that
